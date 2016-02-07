@@ -13,15 +13,15 @@ public void Foo()
 }
 ```
 ```
-public class Foo
-{
-  private string _memberName = "Owen";
-}
-```
-```
 public void Foo()
 {
   private string privateName = "Joe";
+}
+```
+```
+public class Foo
+{
+  private string _memberName = "Owen";
 }
 ```
 
@@ -42,6 +42,14 @@ public class Foo
      set { bar = value; }
    }
  
+}
+```
+```
+public class Foo
+{
+   private int bar;
+   
+   public int Bar { get { return bar; } set { bar = value; } }
 }
 ```
 
